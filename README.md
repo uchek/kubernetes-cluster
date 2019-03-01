@@ -43,6 +43,11 @@ vagrant destroy -f
 
 You can destroy individual machines by vagrant destroy k8s-node-1 -f
 
+## Access the cluster from your laptop
+Copy the .kube/config file from master to your local laptop
+scp -r vagrant@192.168.205.10:/home/vagrant/.kube/config .
+(Vagrant user password is vagrant)
+
 ## Licensing
 
 [Apache License, Version 2.0](http://opensource.org/licenses/Apache-2.0).
